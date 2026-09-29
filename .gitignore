@@ -1,0 +1,58 @@
+# ================================
+# NôngTrạm - Git Ignore
+# ================================
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ---- IDE ----
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# ---- Java / Maven ----
+backend/**/target/
+*.class
+*.log
+
+# ---- Spring / Local config ----
+backend/**/application-local.yml
+backend/**/application-local.yaml
+backend/**/application-dev.yml
+backend/**/application-dev.yaml
+
+# ---- Environment / Secrets ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---- Node / Next.js ----
+frontend/**/node_modules/
+frontend/**/.next/
+frontend/**/out/
+frontend/**/.turbo/
+frontend/**/.vercel/
+frontend/**/npm-debug.log*
+frontend/**/yarn-debug.log*
+frontend/**/yarn-error.log*
+frontend/**/pnpm-debug.log*
+
+# ---- Test / Coverage ----
+frontend/**/coverage/
+backend/**/coverage/
+
+# ---- Docker local overrides ----
+docker-compose.override.yml
+
+# ---- Temporary files ----
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
